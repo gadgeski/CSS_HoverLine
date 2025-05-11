@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*=======================================
+
+CommonStyle
+
+=======================================*/
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  font-size: 1.5rem;
+}
+
+.menu a {
+  color: #808080;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+/* 下線が伸びる */
+.menu-line a {
+  position: relative;
+}
+
+.menu-line a::after {
+  content: "";
+  /* 位置 */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* ラインの影 */
+  width: 100%;
+  height: 2px;
+  background-color: #d3d3d3;
+  /* アニメーション */
+  transition: scale 0.4s;
+  scale: 0;
+}
+
+.menu-line a:hover {
+  color: #d3d3d3;
+}
+
+.menu-line a:hover::after {
+  scale: 1;
+}
