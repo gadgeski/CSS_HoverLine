@@ -45,6 +45,10 @@ CommonStyle
 .menu-line a:hover::after {
   scale: 1;
 }
+summary {
+  color: #696969;
+  font-weight: bold;
+}
 /*=======================================
 
 Box
